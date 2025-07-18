@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auction Client</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="loginPage">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+        <p id="loginError" class="error"></p>
+    </div>
+
+    <div id="auctionsPage" style="display: none;">
+        <h2>Available Auctions</h2>
+        <button onclick="showAuctionForm()">Create an Auction</button>
+        <ul id="auctionsList"></ul>
+    </div>
+
+    <div id="auctionForm" style="display: none;">
+        <h2>Create Auction</h2>
+        <input type="text" id="auctionName" placeholder="Auction Name">
+        <input type="datetime-local" id="startDate" placeholder="Start Date">
+        <input type="datetime-local" id="endDate" placeholder="End Date">
+        <input type="text" id="propertyTitle" placeholder="Property Title">
+        <input type="number" id="listingprice" placeholder="Listing Price">
+        <input type="text" id="listinglocation" placeholder="Listing Location">
+        <input type="number" id="listingbedrooms" placeholder="Number of Bedrooms">
+        <input type="number" id="listingbathrooms" placeholder="Number of Bathrooms">
+        <input type="number" id="listingparkingspaces" placeholder="Parking Spaces">
+        <input type="text" id="listingamenities" placeholder="Amenities">
+        <textarea id="listingdescription" placeholder="Description"></textarea>
+        <input type="url" id="listingimage" placeholder="Image URL">
+        <p id="createError" class="error"></p>
+        <button onclick="createAuction()">Create</button> 
+        <button onclick="toAuctionsPage()">Cancel</button> 
+    </div>
+    
+
+    <div id="auctionDetails" style="display: none;">
+        <h2>Auction Details</h2>
+
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

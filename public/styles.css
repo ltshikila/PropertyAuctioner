@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    line-height: 2.25;
+    letter-spacing: 0.05cm;
+    height: 100vh; /* 100% of viewport height */
+    width: 100vw; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+#auctionsList{
+    display: flex;
+    flex-wrap: wrap;/*allows multiple rows*/
+    align-content: flex-start;/*starts up top*/
+    gap: 20px;
+    list-style-type: none;
+    list-style: none;
+    
+}
+.auction-item {
+    width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: rgb(255, 250, 243);
+}
+.details{
+    padding: 15px;
+}
+img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+#auctionsPage {
+    overflow:scroll;
+    background: white;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#auctionDetails {
+    overflow:scroll;
+    background: white;
+    width: 40%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#auctionForm {
+    background: white;
+    width: 40%;
+    
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#loginPage {
+    background: white;
+    width: 30%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    display: block;
+    width: 90%;
+    margin-bottom: 20px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    width: 20%;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+}
