@@ -7,7 +7,7 @@ const readline = require('readline');
 const app = express();
 const API_BASE_URL = 'https://wheatley.cs.up.ac.za/u22644106/COS216/HA/api.php';
 const API_USERNAME = 'u22644106';
-const API_PASSWORD = 'Narutouzumaki1010';
+const API_PASSWORD = '6ftfv79trxviuug655485';
 
 // Serve static files from the 'public' directory
 app.use(express.static('public'));
