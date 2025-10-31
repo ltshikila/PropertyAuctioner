@@ -84,7 +84,7 @@ The system supports both traditional REST API interactions and WebSocket connect
 ## Architecture
 
 ### System Architecture
-<pre> ```mermaid graph TD A[React Client]:::client --> B[Supabase API]:::api --> C[PostgreSQL]:::db A -.-> D[WebSocket Server]:::socket B -.-> D C -.-> D classDef client fill:#61dafb,stroke:#333,stroke-width:2px; classDef api fill:#f6c90e,stroke:#333,stroke-width:2px; classDef db fill:#68c46f,stroke:#333,stroke-width:2px; classDef socket fill:#ff7f50,stroke:#333,stroke-width:2px; ``` </pre>
+<pre> ```mermaid graph TD subgraph MainFlow A[React Client] --> B[Supabase API] --> C[PostgreSQL] end A -.-> D[WebSocket Server] B -.-> D C -.-> D ``` </pre>
 
 
 ### Database Schema
